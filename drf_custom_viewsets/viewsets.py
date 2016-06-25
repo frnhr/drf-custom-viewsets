@@ -2,6 +2,7 @@ from rest_framework.viewsets import ModelViewSet
 
 
 class CustomSerializerViewSet(ModelViewSet):
+    custom_serializer_classes = {}
 
     def get_serializer_class(self):
         """ Return the class to use for serializer w.r.t to the request method."""
